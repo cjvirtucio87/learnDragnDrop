@@ -1,0 +1,17 @@
+<ul ng-repeat="item in $ctrl.list1">
+  <li
+  data-drag='true'
+  data-drop='true'
+  jqyoui-draggable="{index: {{$index}}, insertInline: true}"
+  jqyoui-droppable="{index: {{$index}}}"
+  ng-model="$ctrl.list1"
+  class='panel'
+  style='width: 200px; height: 200px; background-color: gray; cursor: pointer'>
+    This is panel {{ item.title }}.
+  </li>
+</ul>
+
+<!-- Draggable means you can drag it. -->
+<!-- Droppable means you can drop something on it.-->
+<!-- The model needs to be a list. -->
+<!-- The list must contain objects -->
