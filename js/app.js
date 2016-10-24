@@ -32,9 +32,9 @@ app.controller('PlayGroundCtrl', ['_', "$scope", function(_, $scope) {
   //   console.log('hello');
   // };
   //
-  // vm.onDrop = function () {
-  //   console.log('dropped');
-  // };
+  vm.logData = function () {
+    console.log(vm.list1);
+  };
 }]);
 
 app.component('grid', {

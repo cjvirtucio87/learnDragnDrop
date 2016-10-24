@@ -5,10 +5,26 @@
   data-drag='true'
   data-drop='true'
   jqyoui-draggable="{index:{{$index}},animate:true}"
-  jqyoui-droppable="{index:{{$index}}}"
+  jqyoui-droppable="{index:{{$index}},onDrop:'$ctrl.logData'}"
   ng-model="$ctrl.list1"
   class='panel'
-  style='width: 200px; height: 200px; background-color: gray; cursor: pointer'>
+  style='width: 150px; height: 150px; background-color: gray; cursor: pointer'>
+    {{ cell.title }}.
+  </div>
+</div>
+
+
+<div class='row'>
+  <div
+  ng-repeat="cell in $ctrl.list2"
+  class='col-md-2'
+  data-drag='true'
+  data-drop='true'
+  jqyoui-draggable="{index:{{$index}},animate:true}"
+  jqyoui-droppable="{index:{{$index}}}"
+  ng-model="$ctrl.list2"
+  class='panel'
+  style='width: 150px; height: 150px; background-color: gray; cursor: pointer'>
     {{ cell.title }}.
   </div>
 </div>
