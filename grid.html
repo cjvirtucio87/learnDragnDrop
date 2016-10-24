@@ -2,7 +2,7 @@
   <li style="background-color:gray;width:200px;height:200px;cursor:pointer">
     {{row.name}}
     <ul ng-repeat='component in row.components' style="background-color:cyan;cursor:pointer">
-      <li>
+      <li ng-model="row.components" data-drag="true" data-drop="true" jqyoui-draggable="{index:{{$index}},animate:true}" jqyoui-droppable="{index:{{$index}},animate:true,onDrop:'$ctrl.logData'}">
         {{component.name}}
       </li>
     </ul>

@@ -60,7 +60,7 @@ app.controller('PlayGroundCtrl', ['_', "$scope", function(_, $scope) {
   // };
   //
   vm.logData = function () {
-    console.log(vm.list1);
+    console.log(vm.nestedList);
   };
 }]);
 
