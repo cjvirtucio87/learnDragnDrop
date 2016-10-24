@@ -1,10 +1,10 @@
-<div class='row' ng-repeat='row in $ctrl.nestedList'>
-  <div class='col-md-12' style="background-color:gray;width:200px;height:200px">
+<ul ng-repeat='row in $ctrl.nestedList'>
+  <li style="background-color:gray;width:200px;height:200px;cursor:pointer">
     {{row.name}}
-    <div class='row' ng-repeat='component in row.components' style="background-color:cyan;width:200px;height:200px;">
-      <div class='col-md-12'>
+    <ul ng-repeat='component in row.components' style="background-color:cyan;cursor:pointer">
+      <li>
         {{component.name}}
-      </div>
-    </div>
-  </div>
-</div>
+      </li>
+    </ul>
+  </li>
+</ul>

@@ -32,25 +32,25 @@ app.controller('PlayGroundCtrl', ['_', "$scope", function(_, $scope) {
     {
       name: 'this is row 1',
       components: [
-        {name: 'this is component 1'},
-        {name: 'this is component 2'},
-        {name: 'this is component 3'}
+        {name: 'this is component 1 from row 1'},
+        {name: 'this is component 2 from row 1'},
+        {name: 'this is component 3 from row 1'}
       ]
     },
     {
       name: 'this is row 2',
       components: [
-        {name: 'this is component 1'},
-        {name: 'this is component 2'},
-        {name: 'this is component 3'}
+        {name: 'this is component 1 from row 2'},
+        {name: 'this is component 2 from row 2'},
+        {name: 'this is component 3 from row 2'}
       ]
     },
     {
       name: 'this is row 3',
       components: [
-        {name: 'this is component 1'},
-        {name: 'this is component 2'},
-        {name: 'this is component 3'}
+        {name: 'this is component 1 from row 3'},
+        {name: 'this is component 2 from row 3'},
+        {name: 'this is component 3 from row 3'}
       ]
     }
   ];
