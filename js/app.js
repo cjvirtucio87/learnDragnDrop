@@ -28,6 +28,33 @@ app.controller('PlayGroundCtrl', ['_', "$scope", function(_, $scope) {
     { 'title': 'N', 'drag': true }
   ];
 
+  vm.nestedList = [
+    {
+      name: 'this is row 1',
+      components: [
+        {name: 'this is component 1'},
+        {name: 'this is component 2'},
+        {name: 'this is component 3'}
+      ]
+    },
+    {
+      name: 'this is row 2',
+      components: [
+        {name: 'this is component 1'},
+        {name: 'this is component 2'},
+        {name: 'this is component 3'}
+      ]
+    },
+    {
+      name: 'this is row 3',
+      components: [
+        {name: 'this is component 1'},
+        {name: 'this is component 2'},
+        {name: 'this is component 3'}
+      ]
+    }
+  ];
+
   // vm.onStart = function () {
   //   console.log('hello');
   // };
